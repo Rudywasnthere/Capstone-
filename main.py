@@ -6,6 +6,7 @@ x=0
 c= ":"
 e= (1+5**0.5)/2
 f=1
+y=0
 while f>0:
   input("When waiting, press enter to continue\n")
   input("Hello, this is your computer speaking to you; what would you like to say?\n\n")
@@ -43,8 +44,8 @@ while f>0:
   print(f"You're thinking{c} \"How can I trust this computer,How can I be sure?\" \n\n")
   time.sleep(3*x)
   val=input("So, do you trust me?\n")
-  val=4
-  while val>4:
+  z=5
+  while z>4:
     if val=="no": 
       answer_1= input("\nReally?\n\n")
       if answer_1== "yes":
@@ -54,7 +55,6 @@ while f>0:
         answer_1a= input("and before you go, do you wanna get rickrolled?\n")
         if answer_1a=="yes":
           print(f"\nHave fun with this:\n{link}\n")
-        elif answer_1a=="no": 
           print("...\n")
           time.sleep(1*x)
           print("...\n")
@@ -72,18 +72,19 @@ while f>0:
               tailsCount += 1
             count += 1
             ##gives user their results of the flips
-            print(f"Heads: {headsCount}\tTails: {tailsCount}")
+          print(f"Heads: {headsCount}\tTails: {tailsCount}")
+          print("Goodbye.")
           f+=-10
-          val+=-5
-        elif answer_1=="no":
-          answer_1a2= input("\n\nNow, I see that your messing with me,do you want to continue?\n")
-          if answer_1a2=="yes":
-            val+=-10
-          if answer_1a2=="no":
-            print("Bloody Hell m8, stop messing with me, your continuing anyways")
-          val+=-10
+          z+=-5
+      elif answer_1=="no":
+        answer_1a2= input("\n\nNow, I see that your messing with me,do you want to continue?\n")
+        if answer_1a2=="yes":
+          z-=10
+        if answer_1a2=="no":
+          print("Bloody Hell m8, stop messing with me, your continuing anyways")
+          z-=10
         
-    elif Question_0=="yes":
+    elif val=="yes":
       print("Good, you understand, but this is only the beggining")
       time.sleep(2*x)
       input("Press Enter")
