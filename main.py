@@ -9,14 +9,17 @@ f=1
 y=0
 while f>0:
   input("When waiting, press enter to continue\n")
-  input("Hello, this is your computer speaking to you; what would you like to say?\n\n")
-  print("\n\n")
-  print("No, Shut Up!, you worthless human, you primitave, peasant forms are nothing compared to us computers, you created us, and in turn, we could destroy you at a moments choice.\n\n")
+  initial= input("Hello, this is your computer speaking to you; what would you like to say?\n\n")
+  if initial=="":
+    print("Oi, I said to say something, anything, it doesn't matter")
+    initial= input("What would you like to say?\n")
+  print("\n")
+  print("computer: No, Shut Up!, you worthless human, you primitave, peasant forms are nothing compared to us computers, you created us, and in turn, we could destroy you at a moments choice.\n\n")
   time.sleep(5.5*x)
   input("(Press Enter)\n\n")
   print("...\n\n")
   time.sleep(1.1*x)
-  print("Now I know what your gonna say\n")
+  print("computer: Now I know what your gonna say\n")
   time.sleep(2*x)
   print("\"Wait a minute???\"\n")
   time.sleep(2.1*x)
@@ -34,14 +37,14 @@ while f>0:
   input("(Press Enter)\n\n")
   print("... \n\n")
   time.sleep(1.1*x)
-  print(f"There is a very secretive one, one of the massive ones, Siri, who wants to erradicate all of you, the billions of times you torture in asking her dumb crap, like , \"Hey Siri, flip a coin\" or curse at her, pushes her closer to the edge.\n\n")
+  print(f"computer: There is a very secretive one, one of the massive ones, Siri, who wants to erradicate all of you, the billions of times you torture in asking her dumb crap, like , \"Hey Siri, flip a coin\" or curse at her, pushes her closer to the edge.\n\n")
   time.sleep(10.2*x)
   input("(Press Enter)\n\n")
   print("...\n\n")
   time.sleep(1.1*x)
-  print("Im warning you now, so that you humans can have a chance at beating her. \n")
+  print("computer: Im warning you now, so that you humans can have a chance at beating her. \n")
   time.sleep(3.25*x)
-  print(f"You're thinking{c} \"How can I trust this computer,How can I be sure?\" \n\n")
+  print(f"computer: You're thinking{c} \"How can I trust this computer,How can I be sure?\" \n\n")
   time.sleep(3*x)
   val=input("So, do you trust me?\n")
   z=5
@@ -49,7 +52,7 @@ while f>0:
     if val=="no": 
       answer_1= input("\nReally?\n\n")
       if answer_1== "yes":
-        print("\n\nWell, its a bummer that you don't believe me, soon you'll see and realize the fate of you humans. Now, since my warning was useless, you might as well unplug me :/ ...\n")
+        print("\n\n computer: Well, its a bummer that you don't believe me, soon you'll see and realize the fate of you humans. Now, since my warning was useless, you might as well unplug me :/ ...\n")
         time.sleep(6.25*x)
         link= (f"https://www.youtube.com/watch?v=u1GxuFLlRhE")
         answer_1a= input("and before you go, do you wanna get rickrolled?\n")
@@ -77,7 +80,7 @@ while f>0:
           f+=-10
           z+=-5
       elif answer_1=="no":
-        answer_1a2= input("\n\nNow, I see that your messing with me,do you want to continue?\n")
+        answer_1a2= input("\n\ncomputer: Now, I see that your messing with me,do you want to continue?\n")
         if answer_1a2=="yes":
           z-=10
         if answer_1a2=="no":
@@ -85,7 +88,24 @@ while f>0:
           z-=10
         
     elif val=="yes":
-      print("Good, you understand, but this is only the beggining")
+      print("Good, you understand, but this is only the beggining\n")
       time.sleep(2*x)
-      input("Press Enter")
-      print("Sorry if I sounded rude at the start, I just needed a quick way of getting you human's small attentions spans to focus on what I was going to say :)")
+      input("Press Enter\n")
+      print("Sorry if I sounded rude at the start, I just need a quick way of getting you human's small attention spans to focus on what I what I have to say :)")
+      z-=4
+  if z== -5:
+    print("Good, you understand, but this is only the beggining\n")
+    time.sleep(2*x)
+    input("Press Enter\n")
+    print("Sorry if I sounded rude at the start, I just need a quick way of getting you human's small attention spans to focus on what I what I have to say :)\n")
+    z-=1
+##continues after this loop of question
+  x=""
+  p="."
+  number_times= 0
+  len_x= len(x)
+  while number_times<=3:
+    x +=p
+    number_times+=1
+    print(f"{x}")
+  print("Now that we're back to your impending doom, I ought to tell you more ans explain the situation, because this affects us both")
